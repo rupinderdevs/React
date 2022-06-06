@@ -1,0 +1,44 @@
+@import "../../App.scss";
+
+
+.btn{border-radius: 10px;padding: 18px 40px;line-height: 0 !important}
+
+.more-btn{
+    @extend .btn;
+    border: 1px solid $secondarycolor;
+    display: inline-block;
+    margin: 20px 20px 20px 0;color: $secondarycolor;
+}
+.more-btn:hover{background:  linear-gradient(112deg, $secondarycolor, $tertiarycolor);}
+.more-btn:hover span{color:#fff}
+.more-btn1{
+    @extend .more-btn;
+   @extend .primarybtn;
+}
+.primarybtn{
+    @extend .btn;
+    background: linear-gradient(112deg, $secondarycolor, $tertiarycolor);
+    color: $white;
+}
+.secondarybtn{
+    @extend .btn;
+    color: $secondarycolor;
+}
+.defaultbtn{
+    @extend .btn;
+        color: $secondarycolor;border-color: $secondarycolor;
+}
+
+Button{
+    position: relative;
+}
+.ant-dropdown-menu-item-icon, Button .flagimg{
+    width:24px;
+}
+
+
+@media screen and (max-width: 600px) {
+	.btn{padding:20px}  
+	  
+}
+

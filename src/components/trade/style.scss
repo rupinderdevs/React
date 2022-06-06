@@ -1,0 +1,26 @@
+@import '../../App.scss';
+
+.tradebox{display: flex;align-items: center;}
+
+.tradebox{
+    .langbox p{padding: 10px 20px 0;}
+    .langbox img{width: 100px;}
+    .languages{background-color: #f6f6f6;padding: 6rem;}
+    .imagebox{ box-shadow: 0px 3px 22px $tertiarycolor;background: #fff;position: relative;left:-5%; 
+     img{height: 100%;width: 100%;}  }  
+}
+
+@media screen and (max-width: 1200px) {
+    .tradebox{
+        .imagebox{left:0 ;}
+        .languages{padding: 2rem;}
+    }
+}
+
+    
+@media screen and (min-width:992px) and (max-width: 1200px) {
+    .tradebox{
+        .langbox img{width: 70px;}
+        .languages {padding: 2rem;width: 100%;}   }
+}
+

@@ -1,0 +1,28 @@
+@import "../../App.scss";
+
+
+.awards{
+
+.ant-carousel .slick-dots-bottom { display: none !important;}
+.arrowicons img{width: 35px;margin-right:10px;}
+.ant-card-meta-description{text-transform: capitalize;}
+.ant-card {min-height: 300px;overflow: hidden;margin: 5px 25px;padding: 2rem;text-align: center;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+.ant-card-body{padding: 0;}
+.highimage{background: #EEF7FF;padding: 1rem;border-radius: 50%;width: 128px;margin: 0 auto 30px;}
+
+}
+
+
+@media screen and (max-width: 688px) {
+  .awards{
+ .ant-card {padding: 30px;min-height: 200px !important;margin: 5px 30px;}
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+      .awards {
+          .ant-card {min-height: 345px; margin: 5px 10px;}
+          }
+}

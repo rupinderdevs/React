@@ -1,0 +1,17 @@
+[
+    {
+      "label": "Hindi",
+      "key": "1",
+      "icon": "./images/R.png"
+    },
+    {
+      "label": "2nd menu",
+      "key": "2",
+      "icon": "./images/R.png"
+    },
+    {
+      "label": "3rd menu",
+      "key": "3",
+      "icon":"./images/R.png"
+    }
+  ]

@@ -1,0 +1,95 @@
+@import '../../App.scss';
+
+.footer .ant-layout-footer {
+    padding: 32px 44px;
+    background: $tertiarycolor  !important;
+    color: #fff !important;
+}
+
+.footer {
+    a {
+        color: #fff !important;
+    }
+
+    .flogo {
+        margin-bottom: 15px;
+        width: 170px
+    }
+
+    h3 {
+        color: #fff !important;
+        font-weight: 700;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        line-height: 2.2;
+    }
+
+    .upbtn {
+        position: fixed;
+        width: 70px;
+        right: 10px;
+        bottom: 20px;
+    }
+}
+
+.socialicons {
+    margin: 10px 0;
+    display: inline-flex;
+}
+
+.socialicons a {
+    background: #fff;
+    padding: 10px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+}
+
+.socialicons a img {
+    width: 15px;
+    height: 15px;
+    display: table;
+    margin: 0 auto;
+}
+
+.copyright {
+    background: #fff !important;
+    padding: 10px 44px;
+}
+
+.copyright {
+    a {
+        color: $primarycolor  !important;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .footer .ant-layout-footer {
+        padding: 32px 11px !important;
+    }
+
+    .footer {
+        .socialicons a {
+            padding: 10px;
+        }
+
+        .socialicons img {
+            width: 15px;
+            height: 15px;
+        }
+
+    }
+
+    .copyright {
+        padding: 0 11px;
+        text-align: center;
+    }
+
+
+}

@@ -1,0 +1,175 @@
+
+//  Color Variables
+$white:#fff;
+$primarycolor:#000;
+$secondarycolor: #34a5dd;
+$tertiarycolor: #2874ba;
+
+// Font-variables
+
+$primaryfont: 'Montserrat', sans-serif;
+
+body{font-family: $primaryfont;font-weight: 400;color: $primarycolor !important;overflow-x: hidden;font-size: 15px;line-height: 1.6;
+;} 
+
+
+    h1,h2,h3,h4,h5,h6{ line-height: 1;}
+      h1{ font-size: 36px;}
+      h2{font-size: 28px;}
+
+      h3{font-size: 24px;}
+      h4{font-size: 22px}
+      h5{font-size: 18px;}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// .ant-carousel .slick-dots{left: 30%;margin-left: 0;}
+.ant-menu{font-size: 12px;}
+.ant-carousel .slick-prev, .ant-carousel .slick-next{background: $secondarycolor;}
+
+.ant-carousel .slick-prev:hover, .ant-carousel .slick-next:hover, .ant-carousel .slick-prev:focus, .ant-carousel .slick-next:focus{background: $tertiarycolor;}
+
+.awardsbox .ant-carousel .slick-dots li button {display: none;}
+.ant-carousel .slick-dots-bottom{left:0;}
+
+// 
+.ant-col-xs-24{padding-bottom: 12px;}
+/* --- General ---*/
+
+.container{padding: 32px 44px;}
+.center {margin: auto;width: 95%; }
+.slidermessage img {
+  width: 100px;cursor: pointer;
+  top: 45%;
+  position: absolute;
+  right: 5%;
+}
+
+// .container-fluid {margin: 0 auto;max-width: 1200px;padding: 0 15px;}
+
+
+
+.ant-layout {
+  background: #fff !important;
+}
+
+.mainLayout .ant-layout-header {
+  background: #f8f8f8;
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+}
+
+
+
+/* 
+header
+------ 
+*/
+.ant-layout-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+/* ant menu */
+.header .ant-menu {
+  border: 0;
+  background: none !important;
+}
+
+
+.heroBlock .container-fluid {
+  display: block !important;
+}
+
+
+
+.mobileVisible {
+  display: none;
+}
+
+.mobileHidden {
+  display: block;
+}
+
+
+.ant-card-meta-description{color: $primarycolor !important;}
+
+/* 
+responsive
+----------
+*/
+
+@media only screen and (max-width: 992px) {
+
+
+  .mobileVisible {
+    display: block;
+  }
+  
+  .mobileHidden {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  h1{font-size: 26px;}
+  h2{font-size: 22px;}
+  h3{font-size: 20px;}
+  .center {width: 100%; } 
+	.container{padding: 32px 11px;}
+  .slidermessage img {width:55px;}
+}
+
+@media screen and (max-width: 1200px) {
+
+  body{font-size: 13px;}
+}
+
+@media screen and (min-width: 1200px) {
+
+.container{padding: 32px 52px;}
+
+}
