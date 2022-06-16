@@ -38,7 +38,6 @@ const App = (props) => {
     <Col xs={24} md={8} xl={9} >
         <img className='flogo' src={props.flogo} alt={props.alt}/>
          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum et.</p>
-
             <Socialicons socialicons={socialicons}/>
             
     </Col>

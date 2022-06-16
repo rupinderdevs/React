@@ -25,7 +25,7 @@ const App = (props) => (
                 <img src={index.src} alt={index.alt} />
                 <div className='blog-text'>
                   <p><CommentOutlined style={{ color: "#2874ba" }} /> {index.comment}</p>
-                  <h2>{index.title}</h2>
+                  <h4>{index.title}</h4>
 
                   <div className='blog-btn'> <DefaultButton type="link" defaultBtn="Read More" /> </div>
                 </div>

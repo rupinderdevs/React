@@ -1,13 +1,13 @@
 @import "../../App.scss";
 
 
-.btn{border-radius: 10px;padding: 18px 40px;line-height: 0 !important}
+.btn{border-radius: 10px;padding: 18px 50px;line-height: 0 !important}
 
 .more-btn{
     @extend .btn;
-    border: 1px solid $secondarycolor;
+    border: 1px solid $tertiarycolor;
     display: inline-block;
-    margin: 20px 20px 20px 0;color: $secondarycolor;
+    margin: 20px 20px 20px 0;color: $tertiarycolor;
 }
 .more-btn:hover{background:  linear-gradient(112deg, $secondarycolor, $tertiarycolor);}
 .more-btn:hover span{color:#fff}
