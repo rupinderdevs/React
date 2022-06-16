@@ -5,8 +5,6 @@ import Texts from '../texts/Texts';
 import { Card,Row, Col } from 'antd';
 
 
-
-
 const { Meta } = Card;
 
 const App = (props) => (
@@ -18,7 +16,7 @@ const App = (props) => (
           <Row gutter={24} justify="start">   
               {props.highlight.map ((element, key) => (
                   <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-                      <Card bordered={false} key={key} cover={ <img src = {element.src} alt={element.alt}/>} >
+                      <Card bordered={false} key={key} cover={<img src = {element.src} alt={element.alt}/>} >
                           <Meta title={element.number} description={element.title} />
                       </Card>
                   </Col>

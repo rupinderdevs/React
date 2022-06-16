@@ -9,12 +9,12 @@ $tertiarycolor: #2874ba;
 
 $primaryfont: 'Montserrat', sans-serif;
 
-body{font-family: $primaryfont;font-weight: 400;color: $primarycolor !important;overflow-x: hidden;font-size: 15px;line-height: 1.6;
+body{font-family: $primaryfont;font-weight: 400;color: $primarycolor !important;overflow-x: hidden;font-size: 17px;line-height: 1.6;
 ;} 
 
 
     h1,h2,h3,h4,h5,h6{ line-height: 1;}
-      h1{ font-size: 36px;}
+      h1{ font-size: 36px;line-height: 1.2  ;}
       h2{font-size: 28px;}
 
       h3{font-size: 24px;}
@@ -61,8 +61,7 @@ body{font-family: $primaryfont;font-weight: 400;color: $primarycolor !important;
   }
 }
 
-// .ant-carousel .slick-dots{left: 30%;margin-left: 0;}
-.ant-menu{font-size: 12px;}
+// .ant-menu{font-size: 12px;}
 .ant-carousel .slick-prev, .ant-carousel .slick-next{background: $secondarycolor;}
 
 .ant-carousel .slick-prev:hover, .ant-carousel .slick-next:hover, .ant-carousel .slick-prev:focus, .ant-carousel .slick-next:focus{background: $tertiarycolor;}
@@ -72,6 +71,9 @@ body{font-family: $primaryfont;font-weight: 400;color: $primarycolor !important;
 
 // 
 .ant-col-xs-24{padding-bottom: 12px;}
+.ant-carousel{font-size: 17px !important;color: $primarycolor !important;}
+.ant-card{color: $primarycolor;}
+.ant-card-meta-description {color: $primarycolor  !important;}
 /* --- General ---*/
 
 .container{padding: 32px 44px;}
@@ -132,7 +134,7 @@ header
 }
 
 
-.ant-card-meta-description{color: $primarycolor !important;}
+
 
 /* 
 responsive

@@ -2,7 +2,7 @@
 
 .testimonials{
    text-align: center;
-
+        .mobile {display: none;}
     .ant-card-meta-description  {text-transform:capitalize;position: relative;  z-index: 1;font-weight: 700;}
     .ant-card-meta-description::before{
      content: "";
@@ -23,3 +23,10 @@
 
 
 
+@media screen and (max-width: 992px) {
+    .testimonials {
+
+        .desktop { display: none; }
+        .mobile {display: block; }
+    }
+}
