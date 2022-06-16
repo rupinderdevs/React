@@ -79,10 +79,13 @@ body{font-family: $primaryfont;font-weight: 400;color: $primarycolor !important;
 .container{padding: 32px 44px;}
 .center {margin: auto;width: 95%; }
 .slidermessage img {
-  width: 100px;cursor: pointer;
-  top: 45%;
-  position: absolute;
-  right: 5%;
+    cursor: pointer;
+      width: 100px;
+      height: 100px;
+      // position: fixed;
+      position: absolute;
+      top: 70%;
+      right: 10%;
 }
 
 // .container-fluid {margin: 0 auto;max-width: 1200px;padding: 0 15px;}
