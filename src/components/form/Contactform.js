@@ -1,7 +1,12 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import './style.scss';
-import { PhoneOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
+import {
+  PhoneOutlined,
+  UserOutlined,
+  MailOutlined,
+  SettingOutlined,
+} from "@ant-design/icons";
 import {Form, Input,Row,Col, Select} from 'antd';
 import PrimaryButton from '../buttons/PrimaryButton';
 import Texts from '../texts/Texts';
@@ -26,7 +31,7 @@ const App = () => {
       }}
       onFinish={onFinish}
     >
-      <Row gutter={14}>
+      <Row gutter={24}>
           <Col span={12}>
         <Form.Item
         name="name"
@@ -60,7 +65,7 @@ const App = () => {
               
       </Row> 
 
-      <Row gutter={14}>
+      <Row gutter={24}>
         <Col span={12}> 
         <Form.Item
         name={['user', 'email']}       
@@ -84,7 +89,7 @@ const App = () => {
           },
         ]}
       >
-        <Select placeholder="Services" prefix={<PhoneOutlined  className="site-form-item-icon" />}>
+        <Select placeholder="Services" prefix={<SettingOutlined/>}>
           <Option value="service1">Service 1</Option>
           <Option value="service2">Service 2</Option>
         </Select>
@@ -104,7 +109,7 @@ const App = () => {
           },
         ]}
       >
-        <Input.TextArea placeholder="Note" />
+              <Input.TextArea placeholder="Note"/>
       </Form.Item>
   </Col>
 </Row>

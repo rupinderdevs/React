@@ -2,8 +2,10 @@
 
 
 .testimonial{  position: relative;left:-5%;
-h5{font-weight: 400;}
-.test-item{background-color: #fff;border-radius: 0.6rem;padding:2rem;position: relative;border-bottom-left-radius: 0;text-align: left;}
+.test-item{background-color: #fff;border-radius: 0.6rem;padding:1.5rem;position: relative;border-bottom-left-radius: 0;text-align: left;
+
+    .ant-col-xs-24{padding-bottom: 0;}
+}
 
 .test-item:before{
     content: "";border-left: 0 solid transparent;border-right: 55px solid transparent;border-top: 50px solid #fff;

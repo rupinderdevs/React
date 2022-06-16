@@ -9,12 +9,12 @@ function Testimonialitem(props) {
       <div className='testimonial'>
     <div className="test-item">
    <Row gutter={12}> 
-   <Col sm={12} xs={24} md={12} lg={12} xl={10}>
+   <Col sm={12} xs={24} md={12} lg={12} xl={7}>
    <h3>{props.name}</h3> </Col>
-   <Col sm={12} xs={24} md={6} lg={5}>
+   <Col sm={12} xs={24} md={6} lg={5} xl={17}>
    <img src={props.src} alt={props.alt}/></Col>
     </Row>
-    <h5>{props.position}</h5>
+    <p>{props.position}</p>
     <p>{props.description}</p>
     </div>
 

@@ -70,7 +70,7 @@ body{font-family: $primaryfont;font-weight: 400;color: $primarycolor !important;
 .ant-carousel .slick-dots-bottom{left:0;}
 
 // 
-.ant-col-xs-24{padding-bottom: 12px;}
+
 .ant-carousel{font-size: 17px !important;color: $primarycolor !important;}
 .ant-card{color: $primarycolor;}
 .ant-card-meta-description {color: $primarycolor  !important;}
@@ -158,7 +158,7 @@ responsive
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 688px) {
 
   h1{font-size: 26px;}
   h2{font-size: 22px;}
@@ -166,6 +166,9 @@ responsive
   .center {width: 100%; } 
 	.container{padding: 32px 11px;}
   .slidermessage img {width:55px;}
+    .ant-col-xs-24 {
+      padding-bottom: 12px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
