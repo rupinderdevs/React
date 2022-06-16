@@ -80,10 +80,10 @@ const App = (props) => {
       </Layout>
 <div className='copyright container'>
       <Row justify={'space-between'}>
-          <Col xs={24} sm={24} md={18} xl={20}>
+          <Col xs={24} sm={24} md={18} xl={18}>
         <p>Copyright © 2022 <a href="/">Ellocent Labs IT Solutions Pvt. Ltd.</a> all rights reserved</p>
           </Col>
-          <Col xs={24} sm={24} md={6} xl={4}>
+          <Col xs={24} sm={24} md={6} xl={6}>
 
           <p><a href='/'>Privacy</a> | <a href='/'>Terms</a> | <a href='/'>Help</a>  </p>
           </Col>

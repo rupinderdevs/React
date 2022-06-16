@@ -2,7 +2,6 @@
 
 
 .awards{
-.mobile{display: none;}
 .ant-carousel .slick-dots-bottom { display: none !important;}
 .arrowicons img{width: 35px;margin-right:10px;}
 .ant-card-meta-description{text-transform: capitalize;}
@@ -23,9 +22,7 @@
 
 @media screen and (max-width: 688px) {
   .awards{
- .ant-card {padding: 30px;min-height: 200px !important;margin: 5px 30px;}
- .desktop {display: none;}
- .mobile{display: block;}
+ .ant-card {min-height: 200px !important;margin: 5px;}
   }
 }
 
