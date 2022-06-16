@@ -8,16 +8,15 @@
 .ant-card-meta-description{text-transform: capitalize;}
 .ant-card {border-radius: 10px;min-height:350px;overflow: hidden;margin: 5px 25px;padding:32px;text-align: center;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
 .ant-card-body{padding: 0;}
-.highimage{background: #EEF7FF;padding: 1rem;border-radius: 50%;width: 150px;margin: 0 auto 30px;}
+.ant-card-cover{padding: 1.5rem;background: #EEF7FF;border-radius: 50%;width:170px;height: 170px;margin: 0 auto 30px;}
+.highimage{width: 120px;display: table;margin: 0 auto;}
 
-.ant-carousel .slick-active {
-.ant-card {
-    background: linear-gradient(180deg,$secondarycolor,$tertiarycolor);
-    color: #fff;
-  }
+/* .ant-carousel .slick-active {
+.ant-card {background: linear-gradient(180deg,$secondarycolor,$tertiarycolor);
+    color: #fff; }
     .ant-card-meta-description{color: $white !important;}
-        .highimage { background:$white;}
-}
+    .highimage { background:$white;}
+} */
 
 }
 
