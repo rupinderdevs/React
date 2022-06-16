@@ -71,7 +71,7 @@ const App = (props) => {
 </ul>
 
     </Col>
-    <BackTop>
+    <BackTop visibilityHeight={1200} duration={600}>
 <img className="upbtn" src={up} alt={props.alt}/> </BackTop>
 </Row>
 
