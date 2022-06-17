@@ -62,10 +62,11 @@ const App = (props) => {
           </Col>
         </Row>
           <Carousel
-            autoplay={true}
+          autoplay={true}
+          centerMode={true}
             swipeToSlide
             draggable
-            slidesToShow={3.5}
+            slidesToShow={3.2}
             ref={slide}
           >
             {props.awards.map((item, index) => (

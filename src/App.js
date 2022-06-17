@@ -50,59 +50,55 @@ import packages from './Data/packages.json';
 import testimonials from './Data/testimonials.json';
 import awards from './Data/awards.json';
 import blog from './Data/blog.json';
-
+import videotestimonials from './Data/videotestimonials.json';
 
 
 // navigation
 const list = [{label:"What We Do",key:"1",path:"whatwedo"},{label:"Technologies",key:"2"},{label:"Industries",key:"3"}, {label:"Portfolio",key:"4"}, {label:"Company",key:"5"}, {label: <PrimaryButton primaryBtn = "Contact Us" /> ,key:"6",},{label: <Dropdown icon={R}/>,  key:"7"},{label:<Search icon={searchicon}/>, key:"8"}]
 
 function App() {
-    return ( 
-
+    return (
       <div className="main-container">
-      {/* Navigation */}
-      <Navbar list={list} logo={logo}/>
-      <Routes>
-        <Route exact path="/whatwedo" element={<Whatwedo/>}/>      
-      </Routes>
-        
+        {/* Navigation */}
+        <Navbar list={list} logo={logo} />
+        <Routes>
+          <Route exact path="/whatwedo" element={<Whatwedo />} />
+        </Routes>
 
-      {/* Slider Section */}
-      <HomeSlider sliderdata ={sliderdata} />  
-    
+        {/* Slider Section */}
+        <HomeSlider sliderdata={sliderdata} />
+
         {/* <Whatwedo/> */}
-       {/* Highlights Section */}
-      <Highlight highlight={highlight}/>
- 
-      {/* How we Work Section */}
-      <Howwework howwework={howwework} src={workimage}/>
- 
+        {/* Highlights Section */}
+        <Highlight highlight={highlight} />
+
+        {/* How we Work Section */}
+        <Howwework howwework={howwework} src={workimage} />
+
         {/* Awards Sections*/}
-       <Awards awards={awards}/>        
-      
-      {/* Technical Expertise Section */}
-      <Imagebox imgbox={technical}/>
+        <Awards awards={awards} />
 
-    <Videotestimonial width="100%" src="https://www.youtube.com/embed/D0UnqGm_miA" height="400" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
+        {/* Technical Expertise Section */}
+        <Imagebox imgbox={technical} />
 
+        <Videotestimonial videotestimonials={videotestimonials}/>
 
-      {/*   Package section - Work We Are Proud Of */}
-      <Package packages={packages}/>
-  
-      {/* Form */}
-      <Contactform/>
-    
-      <Trade imgbox={bulb}/>
+        {/*   Package section - Work We Are Proud Of */}
+        <Package packages={packages} />
 
-      {/* Testimonials */}
-      <Testimonials testimonials={testimonials}/>
+        {/* Form */}
+        <Contactform />
 
-      {/* BLog Section */}
-      <Blog blog={blog}/>
+        <Trade imgbox={bulb} />
 
-      {/* Footer Section */}
-      <Footer flogo={footerlogo}/>
+        {/* Testimonials */}
+        <Testimonials testimonials={testimonials} />
 
+        {/* BLog Section */}
+        <Blog blog={blog} />
+
+        {/* Footer Section */}
+        <Footer flogo={footerlogo} />
       </div>
     );
   }

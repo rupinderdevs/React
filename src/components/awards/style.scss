@@ -2,20 +2,22 @@
 
 
 .awards{
+  .slick-slide{transform: scale(.90);}
+  .slick-current {transform: scale(1);}
 .ant-carousel .slick-dots-bottom { display: none !important;}
 .arrowicons img{width: 35px;margin-right:10px;}
 .ant-card-meta-description{text-transform: capitalize;}
-.ant-card {border-radius: 10px;min-height:350px;overflow: hidden;margin: 5px 25px;padding:32px;text-align: center;box-shadow: rgba(40, 116, 186, 0.6) 0px 2px 8px 0px;  }
+.ant-card {border-radius: 10px;min-height:410px;overflow: hidden;margin:5px 10px;padding:64px 32px;text-align: center;box-shadow: rgba(40, 116, 186, 0.6) 0px 2px 8px 0px;  }
 .ant-card-body{padding: 0;}
 .ant-card-cover{padding: 1.5rem;background: #EEF7FF;border-radius: 50%;width:170px;height: 170px;margin: 0 auto 30px;}
 .highimage{width: 120px;display: table;margin: 0 auto;}
 
-/* .ant-carousel .slick-active {
+.ant-carousel .slick-current {
 .ant-card {background: linear-gradient(180deg,$secondarycolor,$tertiarycolor);
-    color: #fff; }
+    color: #fff;box-shadow: none; }
     .ant-card-meta-description{color: $white !important;}
-    .highimage { background:$white;}
-} */
+    // .highimage { background:$white;}
+}
 
 }
 

@@ -2,7 +2,14 @@
 
 .testimonials{
    text-align: center;
-        .mobile {display: none;}
+   // ant design carousel items
+   .slick-slide .ant-card-body{display: none;}
+   .slick-current {
+    // width: 10% !important;
+     img {border-radius: 0 !important;width: 170px;filter: none;}
+    .ant-card-body {display: block;}
+   }
+    .mobile {display: none;}
     .ant-card-meta-description  {text-transform:capitalize;position: relative;  z-index: 1;font-weight: 700;}
     .ant-card-meta-description::before{
      content: "";
@@ -17,7 +24,7 @@
     z-index: -1;
     }
 
-    img{border-radius: 50% !important;width: 100px;margin: 0 auto;}
+    img{border-radius: 50% !important;width: 100px;margin: 0 auto;filter: opacity(0.3)}
 
 }
 

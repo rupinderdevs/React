@@ -8,11 +8,13 @@ function Testimonialitem(props) {
 
       <div className='testimonial'>
     <div className="test-item">
-   <Row gutter={12}> 
+   <Row gutter={12} align={'middle'}> 
    <Col sm={12} xs={24} md={12} lg={12} xl={7}>
-   <h3>{props.name}</h3> </Col>
+          <h3>{props.name}</h3>
+        </Col>
    <Col sm={12} xs={24} md={6} lg={5} xl={17}>
-   <img src={props.src} alt={props.alt}/></Col>
+          <img src={props.star} alt={props.alt} />
+        </Col>
     </Row>
     <p>{props.position}</p>
     <p>{props.description}</p>

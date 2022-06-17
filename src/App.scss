@@ -72,7 +72,7 @@ body{font-family: $primaryfont;font-weight: 400;color: $primarycolor !important;
 // 
 
 .ant-carousel{font-size: 17px !important;color: $primarycolor !important;}
-.ant-card{color: $primarycolor;}
+.ant-card{ @extend .ant-carousel}
 .ant-card-meta-description {color: $primarycolor  !important;}
 /* --- General ---*/
 

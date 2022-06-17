@@ -18,7 +18,7 @@ const App = (props) => (
       />
 
       <div className="desktop">
-        <Carousel autoplay={true} dots={false} slidesToShow={3}>
+        <Carousel autoplay={true} dots={false} slidesToShow={3} centerMode={true} draggable swipeToSlide>
           {props.testimonials.map((item, index) => (
             <div key={index} className="testbox">
               <Card
