@@ -2,13 +2,13 @@
 @import "../../../components/buttons/style.scss";
 
 .contentstyle{
-    height: 550px;
+    height: 500px;
     background:url('./sliderimages/slider.jpg');background-repeat: no-repeat;background-size: cover;background-position: bottom;  
     // border-bottom: 50px solid #e9f5ff;
 }
 
 .contentstyle {
-    .content{padding-top:6rem;position: relative;} 
+    .content{position: relative;}  // padding-top:6rem;
     h1{line-height: 1;font-weight: 700;}
     span{color: $tertiarycolor;}
     // .slidermessage img{display: none}

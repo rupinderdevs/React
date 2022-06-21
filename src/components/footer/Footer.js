@@ -1,41 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "antd/dist/antd.css";
 import "./style.scss";
 import { BackTop, Col, Layout, Row } from "antd";
 import Socialicons from "./Socialicons";
-import facebook from "./Asset/facebook.svg";
-import instagram from "./Asset/instagram.svg";
-import twitter from "./Asset/twitter.svg";
-import behance from "./Asset/behance.svg";
-import linkedin from "./Asset/linkedin.svg";
 import up from "./Asset/up.png";
 import messagei from "../../Assest/messagei.svg";
 import Quickmessage from "../quickmessage/Quickmessage";
+import socialicons from '../../Data/socialicons.json';
 
 const { Footer } = Layout;
-
-const socialicons = [
-  { socialmedia: facebook },
-  { socialmedia: instagram },
-  { socialmedia: twitter },
-  { socialmedia: linkedin },
-  { socialmedia: behance },
-];
 
 const App = (props) => {
   return (
     <>
       <div className="footer">
-        {/* <div className='slidermessage'><img src={messagei} alt={"Message"} /></div>
-         */}
         <Quickmessage messagei={messagei} />
 
         <Layout>
           <Footer>
             <Row>
-              <Col xs={24} md={8} xl={9}>
+              <Col xs={24} md={8} xl={10}>
                 <img className="flogo" src={props.flogo} alt={props.alt} />
-                <p>
+                <p
+                >
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonum et.
                 </p>
@@ -44,10 +32,10 @@ const App = (props) => {
               <Col xs={24} sm={24} md={6} xl={5}>
                 <h3>Quick Links</h3>
                 <ul>
-                  <a href="/">
+                  <Link to="/whatwedo">
                     {" "}
                     <li>What we Do</li>{" "}
-                  </a>
+                  </Link>
 
                   <a href="/">
                     {" "}
@@ -92,7 +80,7 @@ const App = (props) => {
                   </a>
                 </ul>
               </Col>
-              <Col xs={24} md={4} xl={5}>
+              <Col xs={24} md={4} xl={4}>
                 <h3>Contact Us</h3>
                 <ul>
                   <li>loremipsum@gmail.com </li>
