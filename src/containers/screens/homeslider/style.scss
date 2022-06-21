@@ -1,0 +1,59 @@
+@import "../../../App.scss";
+@import "../../../components/buttons/style.scss";
+
+.contentstyle{
+    height: 550px;
+    background:url('./sliderimages/slider.jpg');background-repeat: no-repeat;background-size: cover;background-position: bottom;  
+    // border-bottom: 50px solid #e9f5ff;
+}
+
+.contentstyle {
+    .content{padding-top:6rem;position: relative;} 
+    h1{line-height: 1;font-weight: 700;}
+    span{color: $tertiarycolor;}
+    // .slidermessage img{display: none}
+
+
+    .primarybtn span{color: #fff;}
+    .primarybtn:hover span{color: $secondarycolor;}
+}
+.deskslider .ant-carousel .slick-dots { justify-content: start;margin-right: 0;margin-left: 0;padding-left: 44px;
+
+li button{ background:$secondarycolor; outline: $tertiarycolor solid 1px;width:10px;height:10px;border-radius:50%}
+li.slick-active button {background: $tertiarycolor;}
+
+}
+
+    @media screen and (max-width: 688px) {   
+        .deskslider .ant-carousel .slick-dots {padding-left: 11px;}        
+        .contentstyle{ height: auto;
+        // .content{ width: 100%;}
+       
+        }
+      
+        h1{font-size: 28px;}
+    
+    }
+
+    @media screen and (max-width: 992px) {   
+        .contentstyle{background: #f1f1f1;}
+
+    }
+
+
+    @media screen and  (min-width: 689px) and (max-width: 1200px) {
+        .contentstyle{ height: auto;} 
+    }
+
+    @media screen and (min-width: 1200px) { 
+        .content{
+    h1{font-size: 46px;}
+}
+
+    }
+
+
+    
+        
+
+    

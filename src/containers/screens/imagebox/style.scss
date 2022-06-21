@@ -1,0 +1,22 @@
+@import '../../../App.scss';
+
+
+.imagbox1 {
+.imagebox{ padding: 1rem;box-shadow: 0px 3px 22px rgba(40, 116, 186, 0.4901960784);background: #fff; position: relative;left: 5%;z-index: 1;
+}
+.imagebox img{width: 100%;height: 100%;}
+.textbox{   background: #f2f2f2; padding:2rem 4rem;}
+.textbox .ant-list-item-meta-avatar img{ width: 1rem;}
+
+.textbox .ant-list-item {  padding: 10px 0;}
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+    .imagbox1 {
+        .imagebox{left: 0;}
+    .textbox{ padding:2rem;}
+}
+}

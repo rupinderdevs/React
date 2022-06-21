@@ -1,0 +1,40 @@
+@import '../../../App.scss';
+
+.package {
+    // text-align: left;
+
+    h4{font-weight:700;}
+
+    .packageimage {
+        padding: 2rem;border-radius: 10px;
+      text-align: left; box-shadow:rgba(40, 116, 186, 0.6) 0px 2px 8px 0px;
+        img { width: 80px;    }
+    }
+
+    p {
+        padding: 1rem 0 0;
+    }
+
+    .arrowforward {
+        margin: 0 auto;
+        display: table;
+        font-size: 2rem;
+        color: $tertiarycolor;
+    }
+
+}
+
+@media screen and (max-width: 688px) {
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .package {
+        img {
+            width: 70px !important;
+        }
+        .packageimage {
+            padding: 20px;
+        }
+    }
+}

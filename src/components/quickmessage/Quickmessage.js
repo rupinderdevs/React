@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal } from 'antd';
-import Contactform from '../form/Contactform';
+import Contactform from '../../containers/screens/form/Form';
 
 const App = (props) => {
   const [visible, setVisible] = useState(false);

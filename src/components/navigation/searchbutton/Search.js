@@ -7,6 +7,8 @@ const mockVal = (str, repeat = 1) => ({
 });
 
 const Search = (props) => {
+  const { icon,alt} = props;
+
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [options, setOptions] = useState([]);
 
@@ -33,7 +35,7 @@ const Search = (props) => {
 
   return (
     <div className="searchicon">
-      <img src={props.icon} alt={props.alt} onClick={searchweb} />
+      <img src={icon} alt={alt} onClick={searchweb} />
       <Modal
         visible={isModalVisible}
         footer={null}

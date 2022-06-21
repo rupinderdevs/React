@@ -26,41 +26,41 @@ const App = (props) => {
 
   return (
     <>
-    <Layout className="layout">
+      <Layout className="layout">
+        <Header>
+          <div className="logo">
+            <a href="/">
+              <img src={props.logo} alt="logo" />
+            </a>
+          </div>
 
-      <Header>
-        <div className="logo">
-          <a href="/"><img src={props.logo} alt="logo" /></a>
-        </div>
-    
-        <div className="mobileHidden">
-          <Menu
-            className="menu"
-            theme="light"
-            mode="horizontal"
-            defaultSelectedKeys={["1"]}
-          >
-            <Row>              
-              {props.list.map((element, key) => (                
-                 <Menu.Item key={key}><Link to="/"> {element.label} </Link></Menu.Item>               
-                ))}        
-            </Row>
-          </Menu>
-        </div>
-
-        <div className="mobileVisible">
-          <Button onClick={showDrawer}>
-            <MenuOutlined />
-          </Button>
-          <Drawer visible={isVisible} onClose={closeDrawer} placement="right">
+          <div className="mobileHidden">
             <Menu
-              items={props.list}/>
-          </Drawer>
-        </div>
- 
-      </Header>
+              className="menu"
+              theme="light"
+              mode="horizontal"
+              defaultSelectedKeys={["1"]}
+            >
+              <Row>
+                {props.list.map((element, key) => (
+                  <Link to={element.path}>    
+                      <Menu.Item key={key}> {element.label} </Menu.Item>      
+                  </Link>
+                ))}
+              </Row>
+            </Menu>
+          </div>
 
-    </Layout>
+          <div className="mobileVisible">
+            <Button onClick={showDrawer}>
+              <MenuOutlined />
+            </Button>
+            <Drawer visible={isVisible} onClose={closeDrawer} placement="right">
+              <Menu items={props.list} />
+            </Drawer>
+          </div>
+        </Header>
+      </Layout>
     </>
   );
 };
